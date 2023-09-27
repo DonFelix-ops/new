@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Funtions</title>
+  </head>
+  <body>
+    <script>
+      /* Getting value out of a function - Return statement */
+
+      function function1(){
+       console.log('Hello'); 
+       console.log(2 + 2);
+      }
+      function1();
+      function1();
+
+
+/*Putting value into a function - Parameter */
+
+function calculateTax(){
+console.log(1000 * 0.1);
+}
+calculateTax();
+
+function calculateTax(cost){
+  console.log(cost * 0.1);
+}
+calculateTax(200);
+
+/*Incase there are two*/
+function calculateTax(cost,taxPercent){
+  console.log(cost * taxPercent);
+}
+calculateTax(2000,0.1)
+
+/*Default Value*/
+function calculateTax(cost,taxPercent = 0.1){
+  console.log(cost * taxPercent);
+}
+calculateTax(5000); /* or */
+calculateTax(4000,0.1);
+
+    </script>
+  </body>
+</html>

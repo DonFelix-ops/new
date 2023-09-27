@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+
+
+    <script>
+
+      function arraySwap(array){
+        const lastIndex = array.length -1;
+        
+        // We need to save the values first before
+        // swapping. Otherwise, if we swap directly,
+        // we would lose one of the values.
+
+        const lastValue = array[lastIndex];
+        const firstvalue = array[0];
+        array[0] = lastValue;
+        array[lastIndex] =firstvalue;
+
+        return array;
+
+      }
+
+      function getLastValue(array){
+        const lastIndex = array.length-1;
+        return array[lastIndex];
+}
+
+    console.log(getLastValue([1,20,24,5]));
+    console.log(getLastValue(['hi', 'hello', 'good']))
+
+    console.log(arraySwap([1,20,22,24,5]))
+
+
+
+    </script>
+  </body>
+</html>
